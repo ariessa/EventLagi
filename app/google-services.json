@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "726022071297",
+    "firebase_url": "https://eventlagi-6f9ff.firebaseio.com",
+    "project_id": "eventlagi-6f9ff",
+    "storage_bucket": "eventlagi-6f9ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726022071297:android:738a152b0c17eb00",
+        "android_client_info": {
+          "package_name": "com.android.ariessa.eventlagi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726022071297-m5hobonrcfhpok45d89rc2d9h118ij2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ariessa.eventlagi",
+            "certificate_hash": "48eb0ed43166876c6e7f37c7eb936d20a12a8d28"
+          }
+        },
+        {
+          "client_id": "726022071297-g3dearqq5bc7u0mtputfgvuap3h88r7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFBXHa3BjLwezgUQxv5ac_0WsuYQ_4UQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726022071297-g3dearqq5bc7u0mtputfgvuap3h88r7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

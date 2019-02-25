@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forms.NameDateTimeLocation">
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/first_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_checkStateCompleted="true"
+        app:spb_currentStateDescriptionColor="#009688"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="five"
+        app:spb_stateBackgroundColor="#BDBDBD"
+        app:spb_stateDescriptionColor="#808080"
+        app:spb_stateForegroundColor="#009688"
+        app:spb_stateNumberBackgroundColor="#808080"
+        app:spb_stateNumberForegroundColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Event Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_progress_bar" />
+
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:hint="Example: Google I/O Conference 2018"
+        android:inputType="text|textMultiLine"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="From"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edittext" />
+
+    <EditText
+        android:id="@+id/from_date_edittext"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="12 June 2019"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="To"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_date_edittext" />
+
+    <EditText
+        android:id="@+id/to_date_edittext"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="13 June 2019"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Location"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_date_edittext" />
+
+    <EditText
+        android:id="@+id/location_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Example: Lakeview Cafe"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toStartOf="@+id/name_next_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/name_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location_edittext" />
+
+    <EditText
+        android:id="@+id/from_time_edittext"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="2.00 pm"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/from_date_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/name_edittext" />
+
+    <EditText
+        android:id="@+id/to_time_edittext"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="3.00 pm"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/to_date_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/from_time_edittext" />
+
+</android.support.constraint.ConstraintLayout>
